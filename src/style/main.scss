@@ -1,0 +1,81 @@
+html {
+    font-size: 62.5%; // 1rem is 10px
+}
+
+*,
+*::after,
+*::before {
+ 
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'montserrat';
+}
+
+body {
+
+    overflow-x: hidden;
+    font-weight: normal;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.app {
+    margin-top: 2rem;
+    display: grid;
+    justify-items: center;
+}
+h1{
+    font-size: 50px;
+    font-family: cursive;
+}
+button{
+    background-color: grey;
+    border-radius: 8px;
+    width: 100px;
+    height: 40px;
+}
+input{
+    border-radius: 7px;
+    height: 40px;
+}
+hr{
+    width: 500px;
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr:after{
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+
+}
+
+img{
+    width: 800px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 5px double black;
+    transition: .4s ease-in-out;
+    opacity: .8;
+}
+img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+.lists{
+text-align: center;
+list-style: inside;
+margin-top: 10px;
+font-size: 20px;
+}
